@@ -1,0 +1,32 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "fbbb63619355bd1f4a3f746b51c873cc"
+name = "ambient-discount-gen"
+application_url = "https://cal-freeze-signing-top.trycloudflare.com"
+embedded = true
+handle = "ambient-discount-gen"
+
+[build]
+include_config_on_deploy = true
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2025-07"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/scopes_update" ]
+  uri = "/webhooks/app/scopes_update"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products, write_discounts, read_discounts"
+
+[auth]
+redirect_urls = ["https://cal-freeze-signing-top.trycloudflare.com/auth/callback", "https://cal-freeze-signing-top.trycloudflare.com/auth/shopify/callback", "https://cal-freeze-signing-top.trycloudflare.com/api/auth/callback"]
+
+[pos]
+embedded = false
