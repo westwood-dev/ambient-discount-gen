@@ -219,7 +219,7 @@ export default function DiscountGenerator() {
           result.customer,
           result.status,
           result.discountCode || "-",
-          result.amount ? `$${result.amount.toFixed(2)}` : "-",
+          result.amount ? `£${result.amount.toFixed(2)}` : "-",
           result.message,
         ])}
       />
