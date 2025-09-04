@@ -2,7 +2,7 @@
 
 client_id = "fbbb63619355bd1f4a3f746b51c873cc"
 name = "ambient-discount-gen"
-application_url = "https://glasgow-easier-dale-oral.trycloudflare.com"
+application_url = "<SHOPIFY_APP_URL>"
 embedded = true
 handle = "ambient-discount-gen"
 
@@ -26,7 +26,7 @@ api_version = "2025-07"
 scopes = "write_products, write_discounts, read_discounts"
 
 [auth]
-redirect_urls = ["https://glasgow-easier-dale-oral.trycloudflare.com/auth/callback", "https://glasgow-easier-dale-oral.trycloudflare.com/auth/shopify/callback", "https://glasgow-easier-dale-oral.trycloudflare.com/api/auth/callback"]
+redirect_urls = ["<SHOPIFY_APP_URL>/auth/callback", "<SHOPIFY_APP_URL>/auth/shopify/callback", "<SHOPIFY_APP_URL>/api/auth/callback"]
 
 [pos]
 embedded = false
