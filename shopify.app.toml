@@ -2,7 +2,7 @@
 
 client_id = "fbbb63619355bd1f4a3f746b51c873cc"
 name = "ambient-discount-gen"
-application_url = "<SHOPIFY_APP_URL>"
+application_url = "https://ambient-discount-gen-wwstwds-projects.vercel.app/"
 embedded = true
 handle = "ambient-discount-gen"
 
@@ -26,7 +26,7 @@ api_version = "2025-07"
 scopes = "write_products, write_discounts, read_discounts"
 
 [auth]
-redirect_urls = ["<SHOPIFY_APP_URL>/auth/callback", "<SHOPIFY_APP_URL>/auth/shopify/callback", "<SHOPIFY_APP_URL>/api/auth/callback"]
+redirect_urls = ["https://ambient-discount-gen-wwstwds-projects.vercel.app/auth/callback", "https://ambient-discount-gen-wwstwds-projects.vercel.app/auth/shopify/callback", "https://ambient-discount-gen-wwstwds-projects.vercel.app/api/auth/callback"]
 
 [pos]
 embedded = false
